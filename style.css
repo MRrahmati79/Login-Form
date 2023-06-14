@@ -27,7 +27,7 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 40px;
+    gap: 10px;
     border-radius: 3px;
     box-shadow: 1px 1px 15px #fff;
 }
@@ -51,6 +51,14 @@ button:hover{
     color: black;
     font-size: xx-large;
     border-bottom: solid black 1px;
+}
+
+span {
+    background: red;
+    padding: 5px;
+    font-size: small;
+    display: none;
+    
 }
 
 
