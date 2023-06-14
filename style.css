@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: black;
+    width: 100vw;
+    height: 100vh;
+}
+
+.Login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+
+.bg{
+    width: 400px;
+    height: 350px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    border-radius: 3px;
+    box-shadow: 1px 1px 15px #fff;
+}
+
+.Login input {
+    padding: 8px;
+    width: 300px;
+}
+button{
+    padding: 7px;
+    background: rgba(0, 0, 255, 0.493);
+    border: none;
+    width: 200px;
+    color: #fff;
+    transition: all 0.7s ease-out;
+    margin-top: 5px;
+}
+
+button:hover{
+    background: transparent;
+    color: black;
+    font-size: xx-large;
+    border-bottom: solid black 1px;
+}
+
+
+
