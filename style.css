@@ -58,7 +58,9 @@ span {
     padding: 5px;
     font-size: small;
     display: none;
-    
+}
+.test{
+    display: flex;
 }
 
 

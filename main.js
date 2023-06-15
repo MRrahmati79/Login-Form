@@ -6,12 +6,16 @@ let pasMesage = document.getElementById('pasMesage')
 
 
 
-function mmm () {
-    let valueUser = userName.value  
-    let valuePass = passWord.value  
+const test = () => {
+    let validuser = userName.value
+    let Validpass = passWord.value
 
-
-    if(valuePass){}
-
+    if(validuser.length < 12){
+        console.log('kjjj')
+    }
 
 }
+
+userName.addEventListener('keydown' , test)
+
+
