@@ -1,16 +1,16 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     background: black;
     width: 100vw;
     height: 100vh;
 }
 
-.Login{
+.Login {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,7 +19,7 @@ body{
     height: 100vh;
 }
 
-.bg{
+.bg {
     width: 400px;
     height: 350px;
     background: #fff;
@@ -36,7 +36,8 @@ body{
     padding: 8px;
     width: 300px;
 }
-button{
+
+button {
     padding: 7px;
     background: rgba(0, 0, 255, 0.493);
     border: none;
@@ -46,7 +47,7 @@ button{
     margin-top: 5px;
 }
 
-button:hover{
+button:hover {
     background: transparent;
     color: black;
     font-size: xx-large;
@@ -60,8 +61,3 @@ span {
     display: none;
     transition: all 0.3s linear;
 }
-
-
-
-
-

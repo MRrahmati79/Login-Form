@@ -1,16 +1,19 @@
+let $ = document
 
-let userName = document.querySelector('.userName')
-let passWord = document.querySelector('.passWord')
-let mesUser = document.getElementById('userMessage')
-let mesPass = document.getElementById('pasMessage')
+let userName = $.querySelector('.userName')
+let passWord = $.querySelector('.passWord')
+let mesUser = $.getElementById('userMessage')
+let mesPass = $.getElementById('pasMessage')
+let submit = $.getElementById('submit')
+
 
 
 const ValidationUserName = () => {
 
-    if(userName.value.length < 12){
+    if (userName.value.length < 12) {
         mesUser.style.display = 'flex'
     }
-    else{
+    else {
         mesUser.style.background = 'green'
         mesUser.innerHTML = 'congratulations! Your username has been created.'
         mesUser.style.color = 'white'
@@ -18,21 +21,28 @@ const ValidationUserName = () => {
 }
 
 const ValidationPassWord = () => {
-    if(passWord.value.length < 8 ){
+    if (passWord.value.length < 8) {
         mesPass.style.display = 'flex'
     }
-    else{
+    else {
         mesPass.style.background = 'green'
         mesPass.style.color = 'white'
         mesPass.innerHTML = 'ongratulations! Your password has been created.'
     }
 }
 
+const Send = () => {
+    if (userName.value.length > 12 && passWord.value.length > 8) {
+        alert('Your registration was successful')
+    }
+    else {
+        alert('Enter your username or password correctly')
+    }
+}
 
-
-
-userName.addEventListener('keydown' , ValidationUserName)
-passWord.addEventListener('keydown' , ValidationPassWord)
+userName.addEventListener('keydown', ValidationUserName)
+passWord.addEventListener('keydown', ValidationPassWord)
+submit.addEventListener('click', Send)
 
 
 
