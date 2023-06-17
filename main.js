@@ -1,21 +1,30 @@
 
 let userName = document.querySelector('.userName')
 let passWord = document.querySelector('.passWord')
-let userMesage = document.getElementById('userMesage')
-let pasMesage = document.getElementById('pasMesage')
+let mesUser = document.getElementById('userMessage')
+let mesPass = document.getElementById('pasMessage')
+
+console.log(mesPass)
 
 
 
-const test = () => {
-    let validuser = userName.value
-    let Validpass = passWord.value
 
-    if(validuser.length < 12){
-        console.log('kjjj')
+const ValidationUserName = () => {
+
+    if(userName.value.length < 12){
+        mesUser.style.display = 'flex'
     }
+    else{
+        mesUser.style.background = 'green'
+        mesUser.innerHTML = 'congratulations! Your username has been created.'
+        mesUser.style.color = 'white'
+    }
+
+    
 
 }
 
-userName.addEventListener('keydown' , test)
+userName.addEventListener('keydown' , ValidationUserName)
+
 
 

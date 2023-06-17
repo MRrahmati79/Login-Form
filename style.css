@@ -58,10 +58,10 @@ span {
     padding: 5px;
     font-size: small;
     display: none;
+    transition: all 0.3s linear;
 }
-.test{
-    display: flex;
-}
+
+
 
 
 
